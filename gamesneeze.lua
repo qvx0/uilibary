@@ -1346,7 +1346,7 @@ do
                     Size = utility:Size(1, -46, 1, -40, preview_box),
                     Position = utility:Position(0, (46/2), 0, (40/2), preview_box),
                     Color = Color3.fromRGB(255, 255, 255),
-                    Transparency = 0
+                    Transparency = 1
                 }, window.VisualPreview.Drawings)
                 --
                 do -- Chams
