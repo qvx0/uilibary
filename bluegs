@@ -1486,7 +1486,7 @@ do
                     Size = utility:Size(1, -2, 1, -2, preview_boxoutline),
                     Position = utility:Position(0, 1, 0, 1, preview_boxoutline),
                     Color = Color3.fromRGB(255, 255, 255),
-                    Filled = true,
+                    Filled = false,
                     Transparency = 0.9
                 }, window.VisualPreview.Drawings)
                 --
