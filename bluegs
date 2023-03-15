@@ -1025,7 +1025,7 @@ do
                 Size = {X = 5, Y = 0},
                 Color1 = Color3.fromRGB(0, 255, 0),
                 Color2 = Color3.fromRGB(255, 0, 0),
-                HealthBarFade = 0,
+                HealthBarFade = 0.2,
                 Fading = true,
                 State = false,
                 Visible = true,
@@ -1714,7 +1714,7 @@ do
         end
         --
         function window:Watermark(info)
-            window.watermark = {visible = false}
+            window.watermark = {visible = true}
             --
             local info = info or {}
             local watermark_name = info.name or info.Name or info.title or info.Title or window.wminfo
