@@ -899,7 +899,7 @@ function library.createdropdown(holder, content, flag, callback, default, max, s
 
     contentholder:AddListLayout(3)
 
-    local mouseover = false
+    local mouseover = true
 
     local opened = false
 
