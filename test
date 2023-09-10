@@ -350,7 +350,7 @@ function library.notify(message, time, color)
             Filled = true;
         })
 
-            local cursor = utility:Create("Triangle", nil, {
+            local cursor = utility:Create("Triangle", {
                 Color = 255, 255, 255,
                 Thickness = 2.5,
                 Filled = false,
@@ -358,7 +358,7 @@ function library.notify(message, time, color)
                 Hidden = false
             })
             --
-            local cursor_inline = utility:Create("Triangle", nil, {
+            local cursor_inline = utility:Create("Triangle", {
                 Color = 255, 255, 255,
                 Filled = false,
                 Thickness = 0,
