@@ -350,6 +350,28 @@ function library.notify(message, time, color)
             Filled = true;
         })
 
+	getgenv().cursor = utility.create("Triangle", {
+			Color = Color3.fromRGB(180, 180, 180),
+			Transparency = 0.6,
+			ZIndex = 9999999,
+	})
+	utility.connect(game:GetService("UserInputService").InputChanged, function(input)
+			if input.UserInputType.Name == "MouseMovement" then
+				local mouse = game:GetService("UserInputService"):GetMouseLocation()
+				local MousePos = Vector2.new(mouse.X, mouse.Y)
+				cursor.PointA = MousePos
+				cursor.PointB = MousePos + Vector2.new(20, 7)
+				cursor.PointC = MousePos + Vector2.new(7, 20)
+			end
+		end)
+
+
+
+
+
+
+
+
         notification.accentBottomBar = utility.create('Square',{
             Size = UDim2.new(0,0,0,1);
             Position = UDim2.new(0,0,1,0);
