@@ -1,7 +1,7 @@
 -- settings (so u dont have to scroll)
 local settings = {
-    folder_name = "nnstomp"; -- stupid shit
-    default_accent = Color3.fromRGB(61, 100, 227); -- also stupid shit
+    folder_name = "Advati"; -- stupid shit
+    default_accent = Color3.fromRGB(255, 69, 69); -- also stupid shit
 };
 
 local drawing = loadstring(game:HttpGet("https://raw.githubusercontent.com/PhillipThePaster/Drawing-UI/main/Util/extension.lua"))();
