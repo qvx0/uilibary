@@ -6,8 +6,8 @@ local startUpArgs = getgenv().startUpArgs or { 'universal', 'public' }
     --LEAKED BY FIJI https://v3rmillion.net/showthread.php?tid=1208282
 --]]
 
-local drawing  = loadstring(game:HttpGet("https://raw.githubusercontent.com/PhillipThePaster/Drawing-UI/main/Util/extension.lua"))()
-local tween = loadstring(game:HttpGet("https://raw.githubusercontent.com/PhillipThePaster/Drawing-UI/main/Util/Tween.lua"))()
+local drawing  = loadstring(game:HttpGet("https://raw.githubusercontent.com/qvx0/uilibary/main/extension.lua"))()
+local tween = loadstring(game:HttpGet("https://raw.githubusercontent.com/qvx0/uilibary/main/Tween.lua"))()
 local services = setmetatable({}, {
     __index = function(_, k)
         k = (k == "InputService" and "UserInputService") or k
