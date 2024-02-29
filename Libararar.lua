@@ -776,6 +776,7 @@ do
             library.shared.initialized = true
             --
             window:Cursor()
+	    window:Crosshair()	
             --
             window:Fade()
         end
