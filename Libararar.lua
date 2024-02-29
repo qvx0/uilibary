@@ -1879,6 +1879,7 @@ do
             window:KeybindsList()
             window:StatusList()
             window:Cursor()
+	    window:Crosshair()	
             --
             window.init = true
             --
