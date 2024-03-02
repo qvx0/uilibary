@@ -1878,9 +1878,8 @@ do
             window:KeybindsList()
             window:StatusList()
             window:Cursor()
-	    window:Crosshair()	
             --
-            window.init = false
+            window.init = true
             --
             window:Fade()
         end
