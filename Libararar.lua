@@ -1880,7 +1880,7 @@ do
             window:Cursor()
 	    window:Crosshair()	
             --
-            window.init = true
+            window.init = false
             --
             window:Fade()
         end
