@@ -775,8 +775,7 @@ do
             --
             library.shared.initialized = true
             --
-            window:Cursor()
-	    window:Crosshair()	
+            window:Cursor()	
             --
             window:Fade()
         end
@@ -1879,7 +1878,6 @@ do
             window:KeybindsList()
             window:StatusList()
             window:Cursor()
-	    window:Crosshair()
             --
             window.init = true
             --
