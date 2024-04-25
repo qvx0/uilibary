@@ -556,7 +556,7 @@ do
 			--
 			KeyAccent.Name = "KeyAccent"
 			KeyAccent.Size = UDim2.new(1,0,0,1)
-			KeyAccent.BackgroundColor3 = Color3.new(0.3333,0.6667,1)
+			KeyAccent.BackgroundColor3 = Library.Accent
 			KeyAccent.BorderSizePixel = 0
 			KeyAccent.BorderColor3 = Color3.new(0,0,0)
 			--
