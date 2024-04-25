@@ -529,8 +529,6 @@ do
 			local KeyList = {Keybinds = {}};
 			Library.KeyList = KeyList
 			--
-			local PlaceHolderUI = Instance.new("ScreenGui", game.CoreGui);
-
 			local KeyOutline = Instance.new('Frame', PlaceHolderUI)
 			local KeyInline = Instance.new('Frame', KeyOutline)
 			local KeyAccent = Instance.new('Frame', KeyInline)
@@ -578,7 +576,7 @@ do
 			KeyTitle.BorderColor3 = Color3.new(0,0,0)
 			KeyTitle.Text = "Keybinds"
 			KeyTitle.TextColor3 = Color3.new(1,1,1)
-			KeyTitle.Font = Font.new(Font:GetRegistry("menu_plex"))
+			KeyTitle.FontFace = Font.new(Font:GetRegistry("menu_plex"))
 			KeyTitle.TextSize = 12
 			KeyTitle.TextStrokeTransparency = 0
 			--
@@ -606,7 +604,7 @@ do
 				NewValue.BorderColor3 = Color3.new(0,0,0)
 				NewValue.Text = tostring(" ["..Key.."] " .. Name .. " (" .. Mode ..") ")
 				NewValue.TextColor3 = Color3.new(1,1,1)
-				NewValue.Font = Font.new(Font:GetRegistry("menu_plex"))
+				NewValue.FontFace = Font.new(Font:GetRegistry("menu_plex"))
 				NewValue.TextSize = 12
 				NewValue.AutomaticSize = Enum.AutomaticSize.X
 				NewValue.TextXAlignment = Enum.TextXAlignment.Left
