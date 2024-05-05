@@ -64,29 +64,29 @@ local Create, Resume = coroutine.create, coroutine.resume
 local Sub, Lower, Upper = string.sub, string.lower, string.upper
 
 local Settings = {
-    Enabled = true,
+    Enabled = false,
     MaxDistance = 250,
     FadeTime = 2,
     TextCase = "Normal", -- {"UPPERCASE", "Normal", "lowercase"}
     TextLength = 24,
     Box = {false, "Box", NewHex("#ff006a"), NewHex("#000000")},
     BoxFill = {false, NewHex("#000000"), 0.6},
-    Name = {true, NewHex("#ffffff")},
-    HealthBar = {true, NewHex("#09ff00"), NewHex("#ff0000")},
-    HealthNumber = {true},
+    Name = {false, NewHex("#ffffff")},
+    HealthBar = {false, NewHex("#09ff00"), NewHex("#ff0000")},
+    HealthNumber = {false},
     ArmorBar = {false, NewHex("#3492eb"), NewHex("#29fff4")},
     ArmorNumber = {false},
-    Weapon = {true, NewHex("#ffffff")},
-    WeaponIcon = {true, NewHex("#ffffff")},
+    Weapon = {false, NewHex("#ffffff")},
+    WeaponIcon = {false, NewHex("#ffffff")},
     --Distance = {true, NewHex("#ffffff")},
-    Flag = {true, NewHex("#e1e1e1")},
-    Distance = {true},
-    Knocked = {true},
-    Moving = {true},
-    Jumping = {true},
-    Desynced = {true},
-    Swimming = {true},
-    Reload = {true} -- Tells when player is reloading weapon
+    Flag = {false, NewHex("#e1e1e1")},
+    Distance = {false},
+    Knocked = {false},
+    Moving = {false},
+    Jumping = {false},
+    Desynced = {false},
+    Swimming = {false},
+    Reload = {false} -- Tells when player is reloading weapon
 
 }
 
