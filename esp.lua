@@ -362,7 +362,6 @@ do -- // Visuals
                             Info.Health = Health
                             Info.MaxHealth = MaxHealth
                             Info.ArmorValue = Object:FindFirstChild("BodyEffects") and Object["BodyEffects"]:FindFirstChild("Armor") and Object["BodyEffects"]:FindFirstChild("Armor").Value
-
                             Info.ToolHeld =  (Object:FindFirstChildWhichIsA("Model") and Object:FindFirstChildWhichIsA("Model").Name) or "None"
                         else
                             Info.Pass = false
@@ -649,7 +648,7 @@ do -- // Visuals
                                 if (Settings["Weapon"][1] == true) then
                                     local Weapon = Renders.Weapon
                                     --
-                                    Weapon.Text = Player.Character:FindFirstChildOfClass("Tool") and Player.Character:FindFirstChildOfClass("Tool").Name or "None"
+                                    Weapon.Text = Info.ToolHeld
                                     Weapon.Position = (BoxPosition + NewVector2(BoxSize.X / 2, (BoxSize.Y + 2)))
                                     Weapon.Color = Settings["Weapon"][2]
                                     Weapon.Transparency = GeneralOpacity
@@ -682,7 +681,7 @@ do -- // Visuals
                                     --
                                --[[      if (Settings["Knocked"][1] == true)  and Player.Character.BodyEffects then
                                        FlagStr ..= ("%s\n"):format(tostring(Player.Character.BodyEffects["K.O"].Value and "Knocked" or "Alive"))
-                                    end
+                                    end]]
                                     --
                                     if (Settings["Moving"][1] == true) and RootPart.Velocity.Magnitude >= 5 then
                                         FlagStr ..= ("%s\n"):format(tostring(RootPart.Velocity.Magnitude >= 5 and "Moving" or "Standing"))
@@ -692,7 +691,7 @@ do -- // Visuals
                                         FlagStr ..= ("%s\n"):format(tostring(RootPart.Velocity.Y >= 5 and "Jumping" or ""))
                                     end       
                                     --
-                                    if (Settings["Desynced"][1] == true) and RootPart.Velocity.Magnitude >= 100 then
+                               --[[      if (Settings["Desynced"][1] == true) and RootPart.Velocity.Magnitude >= 100 then
                                         FlagStr ..= ("%s\n"):format(tostring(RootPart.Velocity.Magnitude >= 100 and "Desynced" or ""))
                                     end        
                                     --
