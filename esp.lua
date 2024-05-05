@@ -69,7 +69,7 @@ local Settings = {
     FadeTime = 2,
     TextCase = "Normal", -- {"UPPERCASE", "Normal", "lowercase"}
     TextLength = 24,
-    Box = {false, "Corner", NewHex("#ff006a"), NewHex("#000000")},
+    Box = {false, "Box", NewHex("#ff006a"), NewHex("#000000")},
     BoxFill = {false, NewHex("#000000"), 0.6},
     Name = {true, NewHex("#ffffff")},
     HealthBar = {true, NewHex("#09ff00"), NewHex("#ff0000")},
@@ -363,7 +363,7 @@ do -- // Visuals
                             Info.MaxHealth = MaxHealth
                             Info.ArmorValue = Object:FindFirstChild("BodyEffects") and Object["BodyEffects"]:FindFirstChild("Armor") and Object["BodyEffects"]:FindFirstChild("Armor").Value
 
-                            Info.ToolHeld =  (Object:FindFirstChildOfClass("Tool") and Object:FindFirstChildOfClass("Tool").Name) or "None"
+                            Info.ToolHeld =  (Object:FindFirstChildWhichIsA("Model") and Object:FindFirstChildWhichIsA("Model").Name) or "None"
                         else
                             Info.Pass = false
                         end
