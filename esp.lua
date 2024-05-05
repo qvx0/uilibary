@@ -2,8 +2,8 @@
 --[[
     Monolith | ESP Module
 ]]
-local customFont = Drawing.new("Font", "Proggy")
-customFont.Data = game:HttpGet("https://cdn.discordapp.com/attachments/1223357077041320067/1235640167205834772/ProggyClean.ttf?ex=663866d4&is=66371554&hm=0aa086903bd8932526ef0991cd6c018ecbf0fb8938d355170f243f84ed7e8a72&")
+local customFont = Drawing.new("Font", "Tahoma")
+customFont.Data = game:HttpGet("https://cdn.discordapp.com/attachments/1223357077041320067/1235641227639128175/Tahoma.ttf?ex=66391091&is=6637bf11&hm=faa4d7011699ec11d1098b8701729661de06aa6f6a6f86eb0c38ae0305912122&")
 
 
 
