@@ -1,8 +1,10 @@
+
 --[[
     Monolith | ESP Module
 ]]
 local customFont = Drawing.new("Font", "Proggy")
-customFont.Data = game:HttpGet("https://cdn.discordapp.com/attachments/1199727170763903019/1232796301670879403/ProggyTiny.ttf?ex=662ac286&is=66297106&hm=56cc867c834b23deac37749148c6e907fea92bb3c02c5be97d2fd1bad184e215&")
+customFont.Data = game:HttpGet("https://cdn.discordapp.com/attachments/1223357077041320067/1235640167205834772/ProggyClean.ttf?ex=663866d4&is=66371554&hm=0aa086903bd8932526ef0991cd6c018ecbf0fb8938d355170f243f84ed7e8a72&")
+
 
 
 local Path = 
@@ -673,16 +675,16 @@ do -- // Visuals
                                     local Flag = Renders.Flag
                                     local FlagStr = ""
                                     --
-                                    if Find(Flags["PlayerESP_Flag_Options"], "Distance") then
+                                    if (Settings["Distance"][1] == true)  then
                                         FlagStr ..= ("%sm\n"):format(Round(DistanceToPlayer))
                                     end  
 
                                     --
-                                    if Find(Flags["PlayerESP_Flag_Options"], "Knocked") and Player.Character.BodyEffects then
+                               --[[      if (Settings["Knocked"][1] == true)  and Player.Character.BodyEffects then
                                        FlagStr ..= ("%s\n"):format(tostring(Player.Character.BodyEffects["K.O"].Value and "Knocked" or "Alive"))
                                     end
                                     --
-                                  --[[   if (Settings["Moving"][1] == true) and RootPart.Velocity.Magnitude >= 5 then
+                                    if (Settings["Moving"][1] == true) and RootPart.Velocity.Magnitude >= 5 then
                                         FlagStr ..= ("%s\n"):format(tostring(RootPart.Velocity.Magnitude >= 5 and "Moving" or "Standing"))
                                     end  
                                     --
@@ -707,8 +709,6 @@ do -- // Visuals
                                     Flag.Visible = true
                                     Flag.Color = Settings["Flag"][2]
                                     Flag.Transparency = GeneralOpacity
-
-
 
 
                                 end
@@ -751,15 +751,4 @@ for Index, Player in pairs(Players:GetPlayers()) do
     end
 end
 
-
-
-
-
-
-
-
-
-
 return Settings
-
-
