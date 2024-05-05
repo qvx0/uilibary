@@ -78,9 +78,9 @@ local Settings = {
     ArmorNumber = {false},
     Weapon = {false, NewHex("#ffffff")},
     WeaponIcon = {false, NewHex("#ffffff")},
-    --Distance = {true, NewHex("#ffffff")},
+    Distance = {false, NewHex("#ffffff")},
     Flag = {false, NewHex("#e1e1e1")},
-    Distance = {false},
+    --Distance = {false},
     Knocked = {false},
     Moving = {false},
     Jumping = {false},
@@ -254,7 +254,7 @@ do -- // Visuals
                     },
                     Renders = {
                         Weapon = Visuals:Draw("Text", {Text = "Weapon", Visible = false, Size = 13, Center = true, Color = NewHex("#ffffff"), Outline = true, OutlineColor = NewHex("#000000"), Font = customFont}),
-                       -- Distance = Visuals:Draw("Text", {Text = "Distance", Visible = false, Size = 13, Center = true, Color = NewHex("#ffffff"), Outline = true, OutlineColor = NewHex("#000000"), Font = customFont}),
+                        Distance = Visuals:Draw("Text", {Text = "Distance", Visible = false, Size = 13, Center = true, Color = NewHex("#ffffff"), Outline = true, OutlineColor = NewHex("#000000"), Font = customFont}),
                         HealthBarOutline = Visuals:Draw("Square", {Thickness = 1, Visible = false, Filled = true, Color = NewHex("#000000")}),
                         HealthBarInline = Visuals:Draw("Square", {Thickness = 1, Visible = false, Filled = true, Color = NewHex("#09ff00")}),
                         HealthBarValue = Visuals:Draw("Text", {Text = "100", Visible = false, Size = 13, Center = true, Color = NewHex("#09ff00"), Outline = true, OutlineColor = NewHex("#000000"), Font = customFont}),
@@ -657,7 +657,7 @@ do -- // Visuals
                                 end
                             end
                             --
-                          --[[  do -- // Distance
+                            do -- // Distance
                                 if (Settings["Distance"][1] == true) then
                                     local Distance = Renders.Distance
                                     --
@@ -667,7 +667,7 @@ do -- // Visuals
                                     Distance.Visible = true
                                     Distance.Transparency = GeneralOpacity
                                 end
-                            end]]
+                            end
  
                             --
                             do -- // Flag
