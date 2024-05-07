@@ -176,6 +176,7 @@ do -- // Monolith
     --
     function Monolith:GetHumanoid(Player, Character)
         return Character:FindFirstChildOfClass("Humanoid")
+	return game.Workspace.Bots:GetChildren())
     end
     --
     function Monolith:GetRootPart(Player, Character, Humanoid)
