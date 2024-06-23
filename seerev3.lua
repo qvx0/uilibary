@@ -168,7 +168,7 @@ local utility = handler.createModule("Utility"); do
             end
         end
         local minnumb = ranges[selected]
-        local maxnumb = ranges[selected + 1]
+        
         local lerpValue = (value - minnumb.start) / (maxnumb.start - minnumb.start)
         return utility.lerp(lerpValue, minnumb.number, maxnumb.number)
     end
