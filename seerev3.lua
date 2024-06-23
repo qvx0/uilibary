@@ -3082,7 +3082,7 @@ function library:new(cfg)
             local last_plr = nil;
             
             local flag = cfg.flag or cfg.Flag or utility.nextflag();
-            local servers = game:GetService('HttpService'):JSONDecode(request({Url = ('https://games.roblox.com/v1/games/%s/servers/Public?sortOrder=Asc&limit=100'):format(game.PlaceId), Method = 'GET'}).Body).data
+            local servers = cfg.flag
             -- // Drawings
             local list_holder = library:create("Square", {Parent = page_holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(19,19,19), Size = UDim2.new(1,0,0,((max * 22) + 4) + 28 ), Position = UDim2.new(0,0,0,0), Thickness = 1, Filled = true, ZIndex = 14}) do
                 local outline = library:outline(list_holder, Color3.fromRGB(37,37,37), 14);
