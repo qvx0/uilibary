@@ -8,7 +8,7 @@ if isfile("menu_plex.font") then
 	delfile("menu_plex.font")
 end
 
-writefile("Verdana.ttf", game:HttpGet("https://github.com/qvx0/uilibary/blob/main/Verdana.ttf"))
+writefile("ProggyClean.ttf", game:HttpGet("https://github.com/f1nobe7650/other/raw/main/ProggyClean.ttf"))
 
 -- // Custom Font
 do
@@ -43,7 +43,7 @@ do
 		end;
 	end;
 
-	Font:Register("menu_plex", 100, "normal", {Id = "Verdana.ttf", Font = ""});
+	Font:Register("menu_plex", 100, "normal", {Id = "ProggyClean.ttf", Font = ""});
 end
 
 
