@@ -8,7 +8,7 @@ if isfile("menu_plex.font") then
 	delfile("menu_plex.font")
 end
 
-writefile("Tahoma.ttf", game:HttpGet("https://github.com/qvx0/uilibary/blob/main/Tahoma.ttf"))
+writefile("Verdana.ttf", game:HttpGet("https://github.com/qvx0/uilibary/blob/main/Verdana.ttf"))
 
 -- // Custom Font
 do
@@ -43,7 +43,7 @@ do
 		end;
 	end;
 
-	Font:Register("menu_plex", 400, "normal", {Id = "Tahoma.ttf", Font = ""});
+	Font:Register("menu_plex", 400, "normal", {Id = "Verdana.ttf", Font = ""});
 end
 
 
