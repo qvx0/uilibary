@@ -43,7 +43,7 @@ do
 		end;
 	end;
 
-	Font:Register("menu_plex", 300, "normal", {Id = "Verdana.ttf", Font = ""});
+	Font:Register("menu_plex", 100, "normal", {Id = "Verdana.ttf", Font = ""});
 end
 
 
