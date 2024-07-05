@@ -8,7 +8,7 @@ if isfile("menu_plex.font") then
 	delfile("menu_plex.font")
 end
 
-writefile("ProggyClean.ttf", game:HttpGet("https://github.com/f1nobe7650/other/raw/main/ProggyClean.ttf"))
+writefile("Tahoma.ttf", game:HttpGet("https://github.com/adrienverge/copr-some-nice-fonts/blob/master/Tahoma.ttf"))
 
 -- // Custom Font
 do
@@ -43,7 +43,7 @@ do
 		end;
 	end;
 
-	Font:Register("menu_plex", 400, "normal", {Id = "ProggyClean.ttf", Font = ""});
+	Font:Register("menu_plex", 400, "normal", {Id = "Tahoma.ttf", Font = ""});
 end
 
 
