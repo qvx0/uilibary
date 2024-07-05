@@ -8,7 +8,7 @@ if isfile("menu_plex.font") then
 	delfile("menu_plex.font")
 end
 
-writefile("Tahoma.ttf", game:HttpGet("https://github.com/adrienverge/copr-some-nice-fonts/blob/master/Tahoma.ttf"))
+writefile("Tahoma.ttf", game:HttpGet("https://github.com/qvx0/uilibary/blob/main/Tahoma.ttf"))
 
 -- // Custom Font
 do
