@@ -516,7 +516,7 @@ function library.createdropdown(holder, content, flag, callback, default, max, s
 
     local value = library:create("Text", {
         Text = "",
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0, 2, 0, 0),
         Theme = "Text",
@@ -612,7 +612,7 @@ function library.createdropdown(holder, content, flag, callback, default, max, s
 
             local title = library:create("Text", {
                 Text = option,
-                Font = Drawing.Fonts.Plex,
+                Font = "Plex",
                 Size = 13,
                 Position = UDim2.new(0, 2, 0, 1),
                 Theme = "Text",
@@ -781,7 +781,7 @@ function library.createdropdown(holder, content, flag, callback, default, max, s
                     for _, opt in next, chosen do
                         table.insert(textchosen, opt)
 
-                        if utility.textlength(table.concat(textchosen, ", ") .. ", ...", Drawing.Fonts.Plex, 13).X > (dropdown.AbsoluteSize.X - 6) then
+                        if utility.textlength(table.concat(textchosen, ", ") .. ", ...", "Plex", 13).X > (dropdown.AbsoluteSize.X - 6) then
                             cutobject = true
                             table.remove(textchosen, #textchosen)
                         end
@@ -883,7 +883,7 @@ function library.createlist(holder, content, flag, callback, default, max, scrol
 
             local title = library:create("Text", {
                 Text = option,
-                Font = Drawing.Fonts.Plex,
+                Font = "Plex",
                 Size = 13,
                 Position = UDim2.new(0, 2, 0, 1),
                 Theme = "Text",
@@ -1047,7 +1047,7 @@ function library.createlist(holder, content, flag, callback, default, max, scrol
                     for _, opt in next, chosen do
                         table.insert(textchosen, opt)
 
-                        if utility.textlength(table.concat(textchosen, ", ") .. ", ...", Drawing.Fonts.Plex, 13).X > (list.AbsoluteSize.X - 6) then
+                        if utility.textlength(table.concat(textchosen, ", ") .. ", ...", "Plex", 13).X > (list.AbsoluteSize.X - 6) then
                             cutobject = true
                             table.remove(textchosen, #textchosen)
                         end
@@ -1088,12 +1088,12 @@ function library.createslider(cfg)
     library:create("Image", {Data = images.gradient, Transparency = 1, Visible = true, Parent = slider_frame, Size = UDim2.new(1,0,1,0), ZIndex = 31});
     --
     if name then
-        local slider_title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,20,0,-2), ZIndex = 30});
+        local slider_title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,20,0,-2), ZIndex = 30});
     end
     --
     local slider_fill = library:create("Square", {Parent = slider_frame, Visible = true, Transparency = 1, Theme = "Accent", Size = UDim2.new(1,0,1,0), Thickness = 1, Filled = true, ZIndex = 30, Position = UDim2.new(0,0,0,0)});
     --
-    local slider_value = library:create("Text", {Text = text, Parent = slider_fill, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(1,0,0.5,-2), ZIndex = 31});
+    local slider_value = library:create("Text", {Text = text, Parent = slider_fill, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = true, Font = "Plex", Position = UDim2.new(1,0,0.5,-2), ZIndex = 31});
     --
     local slider_drag = library:create("Square", {Parent = slider_frame, Visible = true, Transparency = 0, Size = UDim2.new(1,0,1,0), Thickness = 1, Filled = true, ZIndex = 30, Position = UDim2.new(0,0,0,0)});
     -- functions
@@ -1197,7 +1197,7 @@ function library.createmultibox(holder, content, flag, callback, default, max, s
 
     local value = library:create("Text", {
         Text = "",
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0, 2, 0, 0),
         Theme = "Text",
@@ -1265,7 +1265,7 @@ function library.createmultibox(holder, content, flag, callback, default, max, s
                     for _, opt in next, chosen do
                         table.insert(textchosen, opt)
 
-                        if utility.textlength(table.concat(textchosen, ", ") .. ", ...", Drawing.Fonts.Plex, 13).X > (dropdown.AbsoluteSize.X - 18) then
+                        if utility.textlength(table.concat(textchosen, ", ") .. ", ...", "Plex", 13).X > (dropdown.AbsoluteSize.X - 18) then
                             cutobject = true
                             table.remove(textchosen, #textchosen)
                         end
@@ -1292,7 +1292,7 @@ function library.createmultibox(holder, content, flag, callback, default, max, s
                     for _, opt in next, chosen do
                         table.insert(textchosen, opt)
 
-                        if utility.textlength(table.concat(textchosen, ", ") .. ", ...", Drawing.Fonts.Plex, 13).X > (dropdown.AbsoluteSize.X - 18) then
+                        if utility.textlength(table.concat(textchosen, ", ") .. ", ...", "Plex", 13).X > (dropdown.AbsoluteSize.X - 18) then
                             cutobject = true
                             table.remove(textchosen, #textchosen)
                         end
@@ -1330,7 +1330,7 @@ function library.createmultibox(holder, content, flag, callback, default, max, s
 
             local title = library:create("Text", {
                 Text = option,
-                Font = Drawing.Fonts.Plex,
+                Font = "Plex",
                 Size = 13,
                 Position = UDim2.new(0, 2, 0, 1),
                 Theme = "Text",
@@ -1428,7 +1428,7 @@ function library.createmultibox(holder, content, flag, callback, default, max, s
             for _, opt in next, chosen do
                 table.insert(textchosen, opt)
 
-                if utility.textlength(table.concat(textchosen, ", ") .. ", ...", Drawing.Fonts.Plex, 13).X > (dropdown.AbsoluteSize.X - 6) then
+                if utility.textlength(table.concat(textchosen, ", ") .. ", ...", "Plex", 13).X > (dropdown.AbsoluteSize.X - 6) then
                     cutobject = true
                     table.remove(textchosen, #textchosen)
                 end
@@ -1512,7 +1512,7 @@ function library.createmultibox(holder, content, flag, callback, default, max, s
                     for _, opt in next, chosen do
                         table.insert(textchosen, opt)
 
-                        if utility.textlength(table.concat(textchosen, ", ") .. ", ...", Drawing.Fonts.Plex, 13).X > (dropdown.AbsoluteSize.X - 6) then
+                        if utility.textlength(table.concat(textchosen, ", ") .. ", ...", "Plex", 13).X > (dropdown.AbsoluteSize.X - 6) then
                             cutobject = true
                             table.remove(textchosen, #textchosen)
                         end
@@ -1669,7 +1669,7 @@ function library.object_colorpicker_inner(default, defaultalpha, parent, count, 
 
     local text = library:create("Text", {
         Text = string.format("%s, %s, %s", math.floor(default.R * 255), math.floor(default.G * 255), math.floor(default.B * 255)),
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0.5, 0, 0, 0),
         Center = true,
@@ -1888,7 +1888,7 @@ function library.createpicker(cfg)
 
     local title = library:create("Text", {
         Text = name,
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0,20,0,-2),
         Theme = "Text",
@@ -2069,7 +2069,7 @@ function library.object_colorpicker(default, defaultalpha, parent, count, flag, 
 
     local text = library:create("Text", {
         Text = string.format("%s, %s, %s", math.floor(default.R * 255), math.floor(default.G * 255), math.floor(default.B * 255)),
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0.5, 0, 0, 0),
         Center = true,
@@ -2084,7 +2084,7 @@ function library.object_colorpicker(default, defaultalpha, parent, count, flag, 
     color_outline.Visible = false
     local color_text = library:create("Text", {
         Text = "color",
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0.5, 0, 0, 0),
         Center = true,
@@ -2098,7 +2098,7 @@ function library.object_colorpicker(default, defaultalpha, parent, count, flag, 
     local animation_outline = library:outline(animation_button, Color3.new(0,0,0), 20);
     local animation_text = library:create("Text", {
         Text = "animation",
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0.5, 0, 0, 0),
         Center = true,
@@ -2110,7 +2110,7 @@ function library.object_colorpicker(default, defaultalpha, parent, count, flag, 
 
     local animation_rainbow = library:create("Text", {
         Text = "rainbow",
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0.5, -utility.textlength("rainbow", 2, 13).X - 17, 0.5, -60),
         Center = true,
@@ -2121,7 +2121,7 @@ function library.object_colorpicker(default, defaultalpha, parent, count, flag, 
     })
     library:create("Text", {
         Text = "/",
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0.5, -25, 0.5, -60),
         Center = true,
@@ -2132,7 +2132,7 @@ function library.object_colorpicker(default, defaultalpha, parent, count, flag, 
     })
     local animation_lerp = library:create("Text", {
         Text = "lerp",
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0.5, utility.textlength("lerp", 2, 13).X - 42, 0.5, -62),
         Center = false,
@@ -2143,7 +2143,7 @@ function library.object_colorpicker(default, defaultalpha, parent, count, flag, 
     })
     library:create("Text", {
         Text = "/",
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0.5, 28, 0.5, -60),
         Center = true,
@@ -2154,7 +2154,7 @@ function library.object_colorpicker(default, defaultalpha, parent, count, flag, 
     })
     local animation_fade = library:create("Text", {
         Text = "fade",
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0.5, utility.textlength("fade", 2, 13).X + 17, 0.5, -62),
         Center = false,
@@ -2165,7 +2165,7 @@ function library.object_colorpicker(default, defaultalpha, parent, count, flag, 
     })
     local animation_disabled = library:create("Text", {
         Text = "disabled",
-        Font = Drawing.Fonts.Plex,
+        Font = "Plex",
         Size = 13,
         Position = UDim2.new(0.5, 0, 0.5, -80),
         Center = true,
@@ -2680,8 +2680,8 @@ function library:new(cfg)
         Visible = false,
     })
     --
-    local window_title = library:create("Text", {Text = name_white, Parent = window_outline, Visible = true, Transparency = 1, Theme = "Accent", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,10,0,7), ZIndex = 13});
-    local window_title_accent = library:create("Text", {Text = name_color, Parent = window_outline, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,utility.textlength(name_white, 2, 13).X + 10,0,7), ZIndex = 13});
+    local window_title = library:create("Text", {Text = name_white, Parent = window_outline, Visible = true, Transparency = 1, Theme = "Accent", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,10,0,7), ZIndex = 13});
+    local window_title_accent = library:create("Text", {Text = name_color, Parent = window_outline, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,utility.textlength(name_white, 2, 13).X + 10,0,7), ZIndex = 13});
     --
     utility.dragify(window_drag, dragoutline, window_outline);
     function window.unload()
@@ -2702,7 +2702,7 @@ function library:new(cfg)
         local button_inline_gradient = library:create("Square", {Parent = button_inline, Visible = true, Transparency = 1, Thickness = 1, Filled = true, ZIndex = 13, Color = Color3.fromRGB(41,41,41), Size = UDim2.new(1,-2,1,-2),Position = UDim2.new(0,1,0,1)});
         library:create("Image", {Data = images.gradient, Transparency = 1, Visible = true, Parent = button_inline_gradient, Size = UDim2.new(1,0,1,0), ZIndex = 13});
         --
-        local button_title = library:create("Text", {Text = name, Parent = button_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(0.5,0,0,9), ZIndex = 13});
+        local button_title = library:create("Text", {Text = name, Parent = button_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = true, Font = "Plex", Position = UDim2.new(0.5,0,0,9), ZIndex = 13});
         table.insert(self.pages_titles, button_title);
         --
         local page_holder = library:create("Square", {Parent = window_holder, Visible = false, Transparency = 0, Size = UDim2.new(1,-40,1,-40), Position = UDim2.new(0,20,0,20), Thickness = 1, Filled = false, ZIndex = 13}); do
@@ -2761,7 +2761,7 @@ function library:new(cfg)
             --
             library:create("Square", {Parent = list_holder, Visible = true, Transparency = 1, Theme = "Accent", Size = UDim2.new(1,-2,0,2), Position = UDim2.new(0,1,0,1), Thickness = 1, Filled = true, ZIndex = 14});
             --
-            local list_title = library:create("Text", {Text = "player list - 0 player(s)", Parent = list_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,3,0,3), ZIndex = 14});
+            local list_title = library:create("Text", {Text = "player list - 0 player(s)", Parent = list_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,3,0,3), ZIndex = 14});
             --
             local list_inline = library:create("Square", {Parent = list_holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(13,13,13), Size = UDim2.new(1, -10, 0, (max * 20)), Position = UDim2.new(0, 5, 0, 22), Thickness = 1, Filled = true, ZIndex = 14}) do
                 local outline = library:outline(list_inline, Color3.fromRGB(37,37,37), 14);
@@ -2773,7 +2773,7 @@ function library:new(cfg)
                 library:outline(outline, Color3.fromRGB(0,0,0), 14);
             end;
             --
-            local player_data = library:create("Text", {Text = "no player selected.", Parent = list_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,70,1,-67), ZIndex = 14});
+            local player_data = library:create("Text", {Text = "no player selected.", Parent = list_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,70,1,-67), ZIndex = 14});
             --
             local player_image = library:create("Image", {
                 Size = UDim2.new(1, 0, 1, 0),
@@ -2926,7 +2926,7 @@ function library:new(cfg)
 
                     local title = library:create("Text", {
                         Text = option.Name,
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(0, 3, 0, 1),
                         Theme = "Text",
@@ -2937,7 +2937,7 @@ function library:new(cfg)
 
                     local team = library:create("Text", {
                         Text = option.Team and tostring(option.Team) or "none",
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(1/4, 6, 0, 1),
                         Color = option.Team and option.TeamColor.Color or Color3.fromRGB(175,175,175),
@@ -2948,7 +2948,7 @@ function library:new(cfg)
 
                     local buyer = library:create("Text", {
                         Text = isbuyer and 'buyer' or "false",
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(2/4, 6, 0, 1),
                         Color = isbuyer and library.theme['Accent'] or Color3.fromRGB(175,175,175),
@@ -2959,7 +2959,7 @@ function library:new(cfg)
 
                     local status = library:create("Text", {
                         Text = option == game.Players.LocalPlayer and "local player" or "none",
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(3/4, 6, 0, 1),
                         Color = option == game.Players.LocalPlayer and Color3.fromRGB(0,255,0) or Color3.fromRGB(175,175,175),
@@ -3091,7 +3091,7 @@ function library:new(cfg)
             --
             library:create("Square", {Parent = list_holder, Visible = true, Transparency = 1, Theme = "Accent", Size = UDim2.new(1,-2,0,2), Position = UDim2.new(0,1,0,1), Thickness = 1, Filled = true, ZIndex = 14});
             --
-            local list_title = library:create("Text", {Text = "server list - 0 servers", Parent = list_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,3,0,3), ZIndex = 14});
+            local list_title = library:create("Text", {Text = "server list - 0 servers", Parent = list_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,3,0,3), ZIndex = 14});
             --
             local list_inline = library:create("Square", {Parent = list_holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(13,13,13), Size = UDim2.new(1, -10, 0, (max * 20)), Position = UDim2.new(0, 5, 0, 22), Thickness = 1, Filled = true, ZIndex = 14}) do
                 local outline = library:outline(list_inline, Color3.fromRGB(37,37,37), 14);
@@ -3210,7 +3210,7 @@ function library:new(cfg)
 
                     local id = library:create("Text", {
                         Text = option.id and string.sub(option.id, 0, 8) .. '-XXXX-XXXX-XXXX-XXXXXXXXXXXX' or 'nil',
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(0, 3, 0, 1),
                         Theme = "Text",
@@ -3221,7 +3221,7 @@ function library:new(cfg)
 
                     local ping = library:create("Text", {
                         Text = option.ping and tostring(option.ping .. ' ms') or "0 ms",
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(2/4, 6, 0, 1),
                         Color = isbuyer and library.theme['Accent'] or Color3.fromRGB(175,175,175),
@@ -3232,7 +3232,7 @@ function library:new(cfg)
 
                     local players = library:create("Text", {
                         Text = option.playing and option.maxPlayers and tostring(option.playing .. '/'.. option.maxPlayers) or "0/0",
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(3/4, 6, 0, 1),
                         Color = option.playing == option.maxPlayers and Color3.fromRGB(255,0,0) or Color3.fromRGB(175,175,175),
@@ -3374,8 +3374,8 @@ function library:new(cfg)
                 library:outline(outline, Color3.fromRGB(0,0,0), 14);
             end;
             --
-            local section_title_cover = library:create("Square", {Parent = section_holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(19,19,19), Size = UDim2.new(0,utility.textlength(name, Drawing.Fonts.Plex, 13).X + 2,0,4), Position = UDim2.new(0,10,0,-1), Thickness = 1, Filled = true, ZIndex = 14})
-            local section_title = library:create("Text", {Text = name, Parent = section_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,11,0,-8), ZIndex = 14});
+            local section_title_cover = library:create("Square", {Parent = section_holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(19,19,19), Size = UDim2.new(0,utility.textlength(name, "Plex", 13).X + 2,0,4), Position = UDim2.new(0,10,0,-1), Thickness = 1, Filled = true, ZIndex = 14})
+            local section_title = library:create("Text", {Text = name, Parent = section_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,11,0,-8), ZIndex = 14});
             --
             local section_content = library:create("Square", {Transparency = 0,Size = UDim2.new(1, -32, 1, -10),Position = UDim2.new(0, 16, 0, 15),Parent = section_holder,ZIndex = 14});
             section_content:AddListLayout(9)
@@ -3399,7 +3399,7 @@ function library:new(cfg)
                 end;
                 local gradient = library:create("Image", {Data = images.gradient, Transparency = 1, Visible = true, Parent = toggle_frame, Size = UDim2.new(1,0,1,0), ZIndex = 14});
                 --
-                local toggle_title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Theme = risky and "Risky Text" or "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,20,0,-5), ZIndex = 14});
+                local toggle_title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Theme = risky and "Risky Text" or "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,20,0,-5), ZIndex = 14});
                 -- functions
                 local function setstate()
                     toggled = not toggled
@@ -3469,7 +3469,7 @@ function library:new(cfg)
                     local keyholder = library:create("Square", {Size = UDim2.new(0,40,1,0), Position = UDim2.new(1,-60,0,0), Transparency = 0, ZIndex = 15, Parent = holder, Thickness = 1, Filled = false})
 
                     local keytext = library:create("Text", {
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Theme = "Un-Selected_Text",
                         Position = UDim2.new(1,-40,0,-5),
@@ -3633,7 +3633,7 @@ function library:new(cfg)
                 local holder = library:create("Square", {Parent = section_content, Visible = true, Transparency = 0, Size = UDim2.new(1,0,0,6), Thickness = 1, Filled = false, ZIndex = 14})
                 --
                 local div = library:create("Square", { Parent = holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(100, 100, 100), Size = UDim2.new(0, 6, 0, 1), Position = UDim2.new(0, 0, 0, 3), Thickness = 1, Filled = true, ZIndex = 14 })
-                local title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(100, 100, 100), Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,20,0,-5), ZIndex = 14});
+                local title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(100, 100, 100), Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,20,0,-5), ZIndex = 14});
                 local div = library:create("Square", { Parent = holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(100, 100, 100), Size = UDim2.new(1, (- utility.textlength(name, 2, 13).X) - 45, 0, 1), Position = UDim2.new(0, 30 + utility.textlength(name, 2, 13).X, 0, 3), Thickness = 1, Filled = true, ZIndex = 14 })
                 --
                 if size == "auto" then
@@ -3667,12 +3667,12 @@ function library:new(cfg)
                 library:create("Image", {Data = images.gradient, Transparency = 1, Visible = true, Parent = slider_frame, Size = UDim2.new(1,0,1,0), ZIndex = 15});
                 --
                 if name then
-                    local slider_title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,20,0,-2), ZIndex = 14});
+                    local slider_title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,20,0,-2), ZIndex = 14});
                 end
                 --
                 local slider_fill = library:create("Square", {Parent = slider_frame, Visible = true, Transparency = 1, Theme = "Accent", Size = UDim2.new(1,0,1,0), Thickness = 1, Filled = true, ZIndex = 14, Position = UDim2.new(0,0,0,0)});
                 --
-                local slider_value = library:create("Text", {Text = text, Parent = slider_fill, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(1,0,0.5,-2), ZIndex = 15});
+                local slider_value = library:create("Text", {Text = text, Parent = slider_fill, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = true, Font = "Plex", Position = UDim2.new(1,0,0.5,-2), ZIndex = 15});
                 --
                 local slider_drag = library:create("Square", {Parent = slider_frame, Visible = true, Transparency = 0, Size = UDim2.new(1,0,1,0), Thickness = 1, Filled = true, ZIndex = 14, Position = UDim2.new(0,0,0,0)});
                 --
@@ -3744,7 +3744,7 @@ function library:new(cfg)
                 end)
 
                 if allow then
-                    local slider_question = library:create("Text", {Text = "?", Parent = holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(1,-36,0,-2), ZIndex = 14});
+                    local slider_question = library:create("Text", {Text = "?", Parent = holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(1,-36,0,-2), ZIndex = 14});
                     local question_button = library:create("Square", {
                         Filled = true,
                         Thickness = 0,
@@ -3810,7 +3810,7 @@ function library:new(cfg)
 
                     local isfading = false;
 
-                    local fadetext = library:create("Text", {Text = "fading", Parent = slider_button, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0.5, 0, 0, 1), ZIndex = 29});
+                    local fadetext = library:create("Text", {Text = "fading", Parent = slider_button, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = false, Font = "Plex", Position = UDim2.new(0.5, 0, 0, 1), ZIndex = 29});
 
                     local outline3 = library:outline(slider_window, Color3.fromRGB(44,44,44))
                     library:outline(outline3, Color3.fromRGB(0,0,0))
@@ -3889,7 +3889,7 @@ function library:new(cfg)
                 --
                 local title = library:create("Text", {
                     Text = name,
-                    Font = Drawing.Fonts.Plex,
+                    Font = "Plex",
                     Size = 13,
                     Position = UDim2.new(0.5, 0, 0.5, 0),
                     Color = Color3.fromRGB(100, 100, 100),
@@ -3942,7 +3942,7 @@ function library:new(cfg)
                 if name then
                     local title = library:create("Text", {
                         Text = name,
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(0, 20, 0, -2),
                         Theme = "Text",
@@ -4000,7 +4000,7 @@ function library:new(cfg)
                 if name then
                     local title = library:create("Text", {
                         Text = name,
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(0, 20, 0, -2),
                         Theme = "Text",
@@ -4058,7 +4058,7 @@ function library:new(cfg)
                 if name then
                     local title = library:create("Text", {
                         Text = name,
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(0, 20, 0, -2),
                         Theme = "Text",
@@ -4241,7 +4241,7 @@ function library:new(cfg)
 
                 local title = library:create("Text", {
                     Text = name,
-                    Font = Drawing.Fonts.Plex,
+                    Font = "Plex",
                     Size = 13,
                     Position = UDim2.new(0,20,0,-5),
                     Theme = "Text",
@@ -4295,7 +4295,7 @@ function library:new(cfg)
                 --
                 local title = library:create("Text", {
                     Text = name,
-                    Font = Drawing.Fonts.Plex,
+                    Font = "Plex",
                     Size = 13,
                     Position = UDim2.new(0,20,0,-5),
                     Theme = "Text",
@@ -4307,7 +4307,7 @@ function library:new(cfg)
                 local keybindname = key_name or "";
 
                 local keytext = library:create("Text", {
-                    Font = Drawing.Fonts.Plex,
+                    Font = "Plex",
                     Size = 13,
                     Theme = "Un-Selected_Text",
                     Position = UDim2.new(1,-40,0,-5),
@@ -4560,11 +4560,11 @@ function library:new(cfg)
                 local esp_health_bar_outline = library:create("Square", {Visible = false, Parent = preview_frame; Size = UDim2.new(0, 3, 0, 240), Position = UDim2.new(0, 6, 0, 20), Color = Color3.fromRGB(0, 0, 0), Thickness = 1, Filled = true, ZIndex = 16});
                 local esp_health_bar_outline_2 = library:outline(esp_health_bar_outline, Color3.new(0,0,0), 16)
                 local esp_health_bar = library:create("Square", {Parent = esp_health_bar_outline; Size = UDim2.new(1,0,1,0), Color = Color3.fromRGB(0, 255, 42), Thickness = 1, Filled = true, ZIndex = 16, Position = UDim2.new(0,0,1,0)});
-                local esp_health_text = library:create("Text", {Text = tostring("<- "..healthamount), Parent = esp_health_bar, Visible = true, Transparency = 1, Color = maincolor, Size = 13, Center = false, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(1,0,0,0), ZIndex = 16});
+                local esp_health_text = library:create("Text", {Text = tostring("<- "..healthamount), Parent = esp_health_bar, Visible = true, Transparency = 1, Color = maincolor, Size = 13, Center = false, Outline = true, Font = "Plex", Position = UDim2.new(1,0,0,0), ZIndex = 16});
 
-                local esp_name = library:create("Text", {Text = "player", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(0, 110, 0, 3), ZIndex = 16});
-                local esp_distance = library:create("Text", {Text = "0 meters", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(0, 110, 0, 260), ZIndex = 16});
-                local esp_weapon = library:create("Text", {Text = "weapon", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(0, 110, 0, 270), ZIndex = 16});
+                local esp_name = library:create("Text", {Text = "player", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = "Plex", Position = UDim2.new(0, 110, 0, 3), ZIndex = 16});
+                local esp_distance = library:create("Text", {Text = "0 meters", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = "Plex", Position = UDim2.new(0, 110, 0, 260), ZIndex = 16});
+                local esp_weapon = library:create("Text", {Text = "weapon", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = "Plex", Position = UDim2.new(0, 110, 0, 270), ZIndex = 16});
                 --
                 function esp_preview:set_health(amount)
                     local value = amount/100
@@ -4659,7 +4659,7 @@ function library:new(cfg)
                 library:outline(outline, Color3.fromRGB(0,0,0), 14);
             end;
             --
-            local section_title = library:create("Text", {Text = name, Parent = section_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,11,0,-8), ZIndex = 14});
+            local section_title = library:create("Text", {Text = name, Parent = section_holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,11,0,-8), ZIndex = 14});
             --
             local sections_holder = library:create("Square", {Parent = section_holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(13,13,13), Size = UDim2.new(1,-20,0,24), Position = UDim2.new(0,10,0,10), Thickness = 1, Filled = true, ZIndex = 14}) do
                 local outline = library:outline(sections_holder, Color3.fromRGB(32,32,32), 14);
@@ -4693,7 +4693,7 @@ function library:new(cfg)
                     table.insert(self.lines, button_accent);
                 end;
                 --
-                local button_title = library:create("Text", {Text = name, Parent = button_holder, Visible = true, Transparency = 1, Theme = "Un-Selected_Text", Size = 13, Center = true, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(0.5,0,0,2), ZIndex = 15});
+                local button_title = library:create("Text", {Text = name, Parent = button_holder, Visible = true, Transparency = 1, Theme = "Un-Selected_Text", Size = 13, Center = true, Outline = true, Font = "Plex", Position = UDim2.new(0.5,0,0,2), ZIndex = 15});
                 table.insert(self.titles, button_title);
                 --
                 local section_content = library:create("Square", {Visible = false, Transparency = 0,Size = override and UDim2.new(0.5, -32, 1, -45) or UDim2.new(1, -32, 1, -45),Position = UDim2.new(0, 16, 0, 45),Parent = section_holder,ZIndex = 14});
@@ -4813,7 +4813,7 @@ function library:new(cfg)
                     end;
                     local gradient = library:create("Image", {Data = images.gradient, Transparency = 1, Visible = true, Parent = toggle_frame, Size = UDim2.new(1,0,1,0), ZIndex = 14});
                     --
-                    local toggle_title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Theme = risky and "Risky Text" or "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,20,0,-5), ZIndex = 14});
+                    local toggle_title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Theme = risky and "Risky Text" or "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,20,0,-5), ZIndex = 14});
                     -- functions
                     local function setstate()
                         toggled = not toggled
@@ -4883,7 +4883,7 @@ function library:new(cfg)
                         local keyholder = library:create("Square", {Size = UDim2.new(0,40,1,0), Position = UDim2.new(1,-60,0,0), Transparency = 0, ZIndex = 15, Parent = holder, Thickness = 1, Filled = false})
 
                         local keytext = library:create("Text", {
-                            Font = Drawing.Fonts.Plex,
+                            Font = "Plex",
                             Size = 13,
                             Theme = "Un-Selected_Text",
                             Position = UDim2.new(1,-40,0,-5),
@@ -5048,7 +5048,7 @@ function library:new(cfg)
                     local holder = library:create("Square", {Parent = side, Visible = true, Transparency = 0, Size = UDim2.new(1,0,0,6), Thickness = 1, Filled = false, ZIndex = 14})
                     --
                     local div = library:create("Square", { Parent = holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(100, 100, 100), Size = UDim2.new(0, 6, 0, 1), Position = UDim2.new(0, 0, 0, 3), Thickness = 1, Filled = true, ZIndex = 14 })
-                    local title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(100, 100, 100), Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,20,0,-5), ZIndex = 14});
+                    local title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(100, 100, 100), Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,20,0,-5), ZIndex = 14});
                     local div = library:create("Square", { Parent = holder, Visible = true, Transparency = 1, Color = Color3.fromRGB(100, 100, 100), Size = UDim2.new(1, (- utility.textlength(name, 2, 13).X) - 45, 0, 1), Position = UDim2.new(0, 30 + utility.textlength(name, 2, 13).X, 0, 3), Thickness = 1, Filled = true, ZIndex = 14 })
                     --
                     if size == "auto" then
@@ -5083,12 +5083,12 @@ function library:new(cfg)
                     library:create("Image", {Data = images.gradient, Transparency = 1, Visible = true, Parent = slider_frame, Size = UDim2.new(1,0,1,0), ZIndex = 15});
                     --
                     if name then
-                        local slider_title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,20,0,-2), ZIndex = 14});
+                        local slider_title = library:create("Text", {Text = name, Parent = holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,20,0,-2), ZIndex = 14});
                     end
                     --
                     local slider_fill = library:create("Square", {Parent = slider_frame, Visible = true, Transparency = 1, Theme = "Accent", Size = UDim2.new(1,0,1,0), Thickness = 1, Filled = true, ZIndex = 14, Position = UDim2.new(0,0,0,0)});
                     --
-                    local slider_value = library:create("Text", {Text = text, Parent = slider_fill, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(1,0,0.5,-2), ZIndex = 15});
+                    local slider_value = library:create("Text", {Text = text, Parent = slider_fill, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = true, Font = "Plex", Position = UDim2.new(1,0,0.5,-2), ZIndex = 15});
                     --
                     local slider_drag = library:create("Square", {Parent = slider_frame, Visible = true, Transparency = 0, Size = UDim2.new(1,0,1,0), Thickness = 1, Filled = true, ZIndex = 14, Position = UDim2.new(0,0,0,0)});
                     --
@@ -5159,7 +5159,7 @@ function library:new(cfg)
                     end)
 
                     if allow then
-                        local slider_question = library:create("Text", {Text = "?", Parent = holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(1,-36,0,-2), ZIndex = 14});
+                        local slider_question = library:create("Text", {Text = "?", Parent = holder, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(1,-36,0,-2), ZIndex = 14});
                         local question_button = library:create("Square", {
                             Filled = true,
                             Thickness = 0,
@@ -5225,7 +5225,7 @@ function library:new(cfg)
 
                         local isfading = false;
 
-                        local fadetext = library:create("Text", {Text = "fading", Parent = slider_button, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0.5, 0, 0, 1), ZIndex = 29});
+                        local fadetext = library:create("Text", {Text = "fading", Parent = slider_button, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = true, Outline = false, Font = "Plex", Position = UDim2.new(0.5, 0, 0, 1), ZIndex = 29});
 
                         local outline3 = library:outline(slider_window, Color3.fromRGB(44,44,44))
                         library:outline(outline3, Color3.fromRGB(0,0,0))
@@ -5307,7 +5307,7 @@ function library:new(cfg)
                     --
                     local title = library:create("Text", {
                         Text = name,
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(0.5, 0, 0.5, 0),
                         Color = Color3.fromRGB(100, 100, 100),
@@ -5360,7 +5360,7 @@ function library:new(cfg)
                     if name then
                         local title = library:create("Text", {
                             Text = name,
-                            Font = Drawing.Fonts.Plex,
+                            Font = "Plex",
                             Size = 13,
                             Position = UDim2.new(0, 20, 0, -2),
                             Theme = "Text",
@@ -5418,7 +5418,7 @@ function library:new(cfg)
                     if name then
                         local title = library:create("Text", {
                             Text = name,
-                            Font = Drawing.Fonts.Plex,
+                            Font = "Plex",
                             Size = 13,
                             Position = UDim2.new(0, 20, 0, -2),
                             Theme = "Text",
@@ -5476,7 +5476,7 @@ function library:new(cfg)
                     if name then
                         local title = library:create("Text", {
                             Text = name,
-                            Font = Drawing.Fonts.Plex,
+                            Font = "Plex",
                             Size = 13,
                             Position = UDim2.new(0, 20, 0, -2),
                             Theme = "Text",
@@ -5661,7 +5661,7 @@ function library:new(cfg)
 
                     local title = library:create("Text", {
                         Text = name,
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(0,20,0,-5),
                         Theme = "Text",
@@ -5715,7 +5715,7 @@ function library:new(cfg)
                     --
                     local title = library:create("Text", {
                         Text = name,
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Position = UDim2.new(0,20,0,-5),
                         Theme = "Text",
@@ -5727,7 +5727,7 @@ function library:new(cfg)
                     local keybindname = key_name or "";
 
                     local keytext = library:create("Text", {
-                        Font = Drawing.Fonts.Plex,
+                        Font = "Plex",
                         Size = 13,
                         Theme = "Un-Selected_Text",
                         Position = UDim2.new(1,-40,0,-5),
@@ -5981,11 +5981,11 @@ function library:new(cfg)
                     local esp_health_bar_outline = library:create("Square", {Visible = false, Parent = preview_frame; Size = UDim2.new(0, 3, 0, 240), Position = UDim2.new(0, 6, 0, 20), Color = Color3.fromRGB(0, 0, 0), Thickness = 1, Filled = true, ZIndex = 16});
                     local esp_health_bar_outline_2 = library:outline(esp_health_bar_outline, Color3.new(0,0,0), 16)
                     local esp_health_bar = library:create("Square", {Parent = esp_health_bar_outline; Size = UDim2.new(1,0,1,0), Color = Color3.fromRGB(0, 255, 42), Thickness = 1, Filled = true, ZIndex = 16, Position = UDim2.new(0,0,1,0)});
-                    local esp_health_text = library:create("Text", {Text = tostring("<- "..healthamount), Parent = esp_health_bar, Visible = true, Transparency = 1, Color = maincolor, Size = 13, Center = false, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(1,0,0,0), ZIndex = 16});
+                    local esp_health_text = library:create("Text", {Text = tostring("<- "..healthamount), Parent = esp_health_bar, Visible = true, Transparency = 1, Color = maincolor, Size = 13, Center = false, Outline = true, Font = "Plex", Position = UDim2.new(1,0,0,0), ZIndex = 16});
 
-                    local esp_name = library:create("Text", {Text = "player", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(0, 110, 0, 3), ZIndex = 16});
-                    local esp_distance = library:create("Text", {Text = "0 meters", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(0, 110, 0, 260), ZIndex = 16});
-                    local esp_weapon = library:create("Text", {Text = "weapon", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = Drawing.Fonts.Plex, Position = UDim2.new(0, 110, 0, 270), ZIndex = 16});
+                    local esp_name = library:create("Text", {Text = "player", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = "Plex", Position = UDim2.new(0, 110, 0, 3), ZIndex = 16});
+                    local esp_distance = library:create("Text", {Text = "0 meters", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = "Plex", Position = UDim2.new(0, 110, 0, 260), ZIndex = 16});
+                    local esp_weapon = library:create("Text", {Text = "weapon", Parent = preview_frame, Visible = false, Transparency = 1, Color = Color3.fromRGB(255, 255, 255), Size = 13, Center = true, Outline = true, Font = "Plex", Position = UDim2.new(0, 110, 0, 270), ZIndex = 16});
                     --
                     function esp_preview:set_health(amount)
                         local value = amount/100
@@ -6136,7 +6136,7 @@ function library:notify(info)
     local line1 = library:create("Square", {Parent = background, Visible = true, Transparency = 1, Theme = "Accent", Size = UDim2.new(0,1,0,1), Position = UDim2.new(0,0,1,-1), Thickness = 1, Filled = true, ZIndex = 11});
 
     --
-    local notiftext = library:create("Text", {Text = title, Parent = background, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0,3,0,2), ZIndex = 11});
+    local notiftext = library:create("Text", {Text = title, Parent = background, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0,3,0,2), ZIndex = 11});
     --
     function ntif.remove()
         local goaway = tween.new(ntif.instances[2], TweenInfo.new(0.4, Enum.EasingStyle.Quart, Enum.EasingDirection.Out), {Position = UDim2.new(0,-500,0,0)}):Play()
@@ -6208,8 +6208,8 @@ function library:createwatermark(info)
     watermark.objects.outline1 = library:outline(watermark.objects.background, Color3.fromRGB(44,44,44), 10, true)
     watermark.objects.outline2 = library:outline(watermark.objects.outline1, Color3.fromRGB(0,0,0), 10, true)
 
-    watermark.objects.text2 = library:create("Text", { Parent = watermark.objects.background, Visible = true, Transparency = 1, Theme = "Accent", Size = 13, Text = 'seere', Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0, 3,0,2), ZIndex = 11})
-    watermark.objects.text3 = library:create("Text", { Text = title, Parent = watermark.objects.background, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = Drawing.Fonts.Plex, Position = UDim2.new(0, 1 + utility.textlength(watermark.objects.text2.Text, 2, 13).X,0,2), ZIndex = 11})
+    watermark.objects.text2 = library:create("Text", { Parent = watermark.objects.background, Visible = true, Transparency = 1, Theme = "Accent", Size = 13, Text = 'seere', Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0, 3,0,2), ZIndex = 11})
+    watermark.objects.text3 = library:create("Text", { Text = title, Parent = watermark.objects.background, Visible = true, Transparency = 1, Theme = "Text", Size = 13, Center = false, Outline = false, Font = "Plex", Position = UDim2.new(0, 1 + utility.textlength(watermark.objects.text2.Text, 2, 13).X,0,2), ZIndex = 11})
     --
     function watermark.setstate(bool)
         for i, v in next, watermark.objects do
